@@ -17,19 +17,20 @@ public class ComputingStatisticsRunner {
       
       //Use this code to test the methods in the ComputingStatistics class
       ComputingStatistics analysis = new ComputingStatistics(list);
-      System.out.println(analysis.totalAmount());
-//       System.out.println(analysis.avgLoan());
-//       System.out.println(analysis.largestLoan());
-//       System.out.println(analysis.smallestLoan());
-//       System.out.println(analysis.largestLoanCountry());
-//       System.out.println(analysis.smallestLoanCountry());
-//       System.out.println(analysis.avgDaysToFund());
-//       System.out.println(analysis.largestLoanKenya());
-//       System.out.println(analysis.avgLoanPhilippines());
-//       System.out.println(analysis.longestToFundCountry());
-//       System.out.println(analysis.variance());
-//       System.out.println(analysis.standardDeviation());
-//       System.out.println(analysis.empiricalRule());
+      System.out.println(analysis.totalAmount());              //Level 1 Question 1
+//       System.out.println(analysis.avgLoan());               //Level 1 Question 2
+//       System.out.println(analysis.largestLoan());           //Level 1 Question 3
+//       System.out.println(analysis.smallestLoan());          //Level 1 Question 4
+//       System.out.println(analysis.largestLoanCountry());    //Level 1 Question 5
+//       System.out.println(analysis.smallestLoanCountry());   //Level 1 Question 6
+//       System.out.println(analysis.avgDaysToFund());         //Level 2 Question 1
+//       System.out.println(analysis.largestLoanKenya());      //Level 2 Question 2
+//       System.out.println(analysis.avgLoanPhilippines());    //Level 2 Question 3
+//       System.out.println(analysis.longestToFundCountry());  //Level 2 Question 4
+//       System.out.println(analysis.mostLoansFunded());       //Level 2 Question 5
+//       System.out.println(analysis.variance());              //Level 2 Question 1
+//       System.out.println(analysis.standardDeviation());     //Level 2 Question 2
+//       System.out.println(analysis.empiricalRule());         //Level 2 Question 3
    }
    
    
