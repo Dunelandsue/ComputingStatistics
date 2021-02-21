@@ -26,8 +26,10 @@ public class ComputingStatistics {
     */
    public double totalAmount() {
       double amount = 0.0;
+      Loan loan;
       for(int i = 0; i < data.size(); i++) {
-         amount = amount + data.get(i).getLoanAmount();
+         loan = data.get(i);
+         amount = amount + loan.getLoanAmount();
       }
       return amount;
    }
