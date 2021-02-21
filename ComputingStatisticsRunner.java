@@ -49,42 +49,26 @@ public class ComputingStatisticsRunner {
       // Check to see if the file still has data to be read in.
       while(in.hasNextLine()) {
       
-         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-      
          // Read in the line of data and 
-            // use a space as a delimiter to separate the different columns.
+         // use a space as a delimiter to separate the different columns.
          String[] line = in.nextLine().split(",");
          
          // Local variable containing the ID.
          int ID = Integer.parseInt(line[0]);
          
          // Local variable containing the amount.
-         int amount = Integer.parseInt(line[2]);
+         int amount = Integer.parseInt(line[1]);
          
          // Local variable containing the country.
-         String country = line[5];
+         String country = line[2];
          
          // Local variable containing the lenders.
-         int lenders = Integer.parseInt(line[11]);
+         int lenders = Integer.parseInt(line[5]);
          
          // Local variable containing the difference in days.
-         int differenceInDays = -1;
+         int differenceInDays = Integer.parseInt(line[4]);
          
-         try {
-            Date postedDate = sdf.parse(line[8]);
-        
-            Date fundedDate = sdf.parse(line[9]);
-            
-            long differenceInTime = fundedDate.getTime() - postedDate.getTime(); 
-                
-            differenceInDays = (int)((differenceInTime / (1000 * 60 * 60 * 24)) % 365);       
-         } 
-         
-        // Catch the Exception 
-        catch (ParseException e) { 
-            e.printStackTrace();
-        }
-        // Add the loan to the arraylist.
+         // Add the loan to the arraylist.
         list.add(new Loan(ID, amount, country, differenceInDays, lenders));         
         
       }
